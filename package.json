@@ -1,7 +1,7 @@
 {
   "name": "invoice-qr-decoder",
-  "description": "",
-  "author": "",
+  "description": "TypeScript library for decoding QR codes from Portuguese invoices.",
+  "author": "Luís Gouveia",
   "version": "1.0.0",
   "license": "UNLICENSED",
   "keywords": [],
