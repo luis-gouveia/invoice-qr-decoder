@@ -8,3 +8,17 @@ export class FailedToParse extends Error {
     this.invalidFields = invalidFields
   }
 }
+
+/** Error thrown when the provided raw document data is not valid */
+export class InvalidData extends Error {
+  constructor() {
+    super('The provided data is not valid.')
+  }
+}
+
+/** Error thrown when its not possible to decode the document data */
+export class FailedToDecode extends Error {
+  constructor() {
+    super('Failed to decode the document data.')
+  }
+}
