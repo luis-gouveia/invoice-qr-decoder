@@ -138,7 +138,7 @@ export function parse(data: string) {
   } catch (error) {
     let invalidFields
     if (error instanceof ZodError) {
-      invalidFields = error.errors.map((issue: any) => ({
+      invalidFields = error.issues.map((issue: any) => ({
         argument: issue.path.join('.'),
         message: issue.message,
       }))
